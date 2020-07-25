@@ -1,0 +1,223 @@
+@font-face
+{   
+    font-family: Manrope;
+    src: url(https://fonts.google.com/specimen/Manrope);    
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {background-color: hsl(210, 46%, 95%); font: Manrope;}
+    
+    .main { 
+        display: inline-block;  
+        width: 1440px; 
+        font-size: 13px; 
+        position: relative;
+        left: 300px;
+        top: 200px; 
+        
+    }
+    .main-img img { float: left; height:300px; border-radius: 5px; z-index: -1;}
+
+    .details {
+        display: inline-block;  
+        border-radius: 0px 5px 5px 0px;
+        position: relative; 
+        background-color: rgb(255, 255, 255);
+        width: 500px;
+        height: 300px;     
+        left: -70px;
+        text-align: justify;
+        text-justify: inter-word;
+        font-family: 'Manrope', sans-serif;
+      }
+      .topic 
+      {
+        display: inline-block; 
+        position: relative;
+        font-size: 20px;
+        line-height: .75cm;
+        word-spacing: 1px;
+        color: hsl(217, 19%, 35%);
+        font-weight: 700;
+        width: 360px;  
+        text-align: justify;  
+        left: 68px;
+        top:50px;
+      }
+      .detail-text 
+      {
+        display: inline-block; 
+        position: relative;
+        font-size: 12px;
+        line-height: .5cm;
+        word-spacing: 1px;
+        color: hsl(214, 17%, 51%);
+        font-weight: 400;
+        width: 360px;  
+        text-align: justify;  
+        left: 70px;
+        top:60px;
+      }
+
+      .profile-pic 
+      {
+        display: inline-block; 
+        position: relative;
+        left: -380px;
+        top:130px;
+      }
+      .profile-info 
+      {
+        display: inline-block; 
+        position: relative;
+        left: 130px;
+        top:70px;
+      }
+
+      .share 
+      {
+        display: inline-block; 
+        position: relative;
+        align-content: center;
+        background-color: hsl(210, 46%, 95%);
+        width:30px;
+        height:30px;
+        right: -220px;
+        top:75px;
+        border-radius: 50%;
+        cursor: pointer;        
+      }
+
+      .share img
+      {
+        position: relative;
+        top:6px;
+        left:6px;
+      }
+      
+      .profile-pic img
+      {
+        border-radius: 50%;
+        width: 45px;
+
+      }
+
+      .popup 
+      {
+        position: relative;
+        display: inline-block;
+        display: none;
+        right: -75px;
+        width: 250px; 
+        height: 50px;
+        top:6px; 
+        background-color:hsl(217, 19%, 35%);
+        border-radius: 7px;
+      }
+      .popup img 
+      {
+        position: relative;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+        top:15px;
+        left:60px;
+      }
+      .popup::after 
+      {
+        content: '';
+        position: absolute;
+        display: block;        
+        z-index: 1;
+        top: 50px; 
+        width: 0; 
+        height: 0; 
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;        
+        border-top: 15px solid hsl(217, 19%, 35%);
+        left: 45%;        
+      }
+
+      .txt-share {
+        position: relative;
+        display: inline-block;
+        color: hsl(214, 17%, 51%);
+        font-family: 'Manrope', sans-serif;
+        letter-spacing: 5px;
+        font-weight: 700;
+        font-size: 12px;
+        top:10px;
+        left:30px;
+      }
+
+      .share-mobile, .pre-click-mobile, .post-click-mobile {display:none !important;}
+      .user-name {font-size: 14px; font-weight: 700; position: relative;  display: inline-block; top:12px; color:hsl(217, 19%, 35%);}
+      .start-date {font-size: 12px;  position: relative; top:25px; display: inline-block; left: -125px; color:hsl(212, 23%, 69%); }
+      
+      @media screen and (max-width:375px)
+      {
+        /* For mobile phones: */
+
+       body 
+        {   overflow-x: hidden;
+            width:100%  !important;           
+        } 
+        
+        .main 
+        { 
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            justify-content: space-evenly;
+            width: auto !important;
+            left: 0px; 
+            top:50px;      
+        } 
+
+        .main-img img { width:350px;}
+
+        .details 
+        {        
+          width: 350px !important; 
+          border-radius: 0px 0px 5px 5px;
+          left:0px;
+          height: 310px;  
+          top: -60px;    
+       }
+       .topic { word-spacing: 0.2px;  left:10px; font-size: 18px; width:320px;}
+       .detail-text{ left:15px; width:300px; font-size:15px; word-spacing: 0.4px; }
+       .profile-info {left: 50px;} 
+       
+       .profile-pic { left: -280px; top:130px;}
+       .user-name {left: 30px; top:15px; }
+       .start-date {left: -92px; top:35px; }
+       .popup {        
+        width: 350px;
+        height: 75px;
+        top: 50px;
+        left:0px;
+        border-radius: 0px 0px 5px 5px;
+        }
+        .share {display:none !important;}
+        ::after {display:none !important;}
+        .pre-click { left:0px;}
+
+        .share-mobile {         
+          position: relative;
+          display: inline-block !important;
+          background-color: hsl(210, 46%, 95%);
+          width:30px;
+          height:30px;
+          left: 95px;
+          top:80px;
+          z-index: 1;
+          border-radius: 50%;
+        }
+         .pre-click-mobile, .post-click-mobile {display:inline-block !important;}
+        .share-mobile img
+        {
+          position: relative;
+          top:6px;
+          left:6px;
+        }
+      }
